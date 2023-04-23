@@ -1,20 +1,55 @@
-<ion-tabs>
+<ion-header [translucent]="true">
+  <ion-toolbar>
 
+    <ion-title>Traveler</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+           <ion-icon name="notifications-circle-outline" style="font-size: 30px;"></ion-icon>
+<ion-badge color="danger" style="position: absolute; top: 0px; right: -1px; height: 15px; width: 15px; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+          <div style="font-size: 10px;">3</div>
+        </ion-badge>
+
+      </ion-button>
+      <ion-button>
+        <ion-icon name="person-circle-outline" style="font-size: 28px;"></ion-icon>
+      
+      </ion-button>
+    </ion-buttons>
+    
+
+  </ion-toolbar>
+ 
+  </ion-header>
+  
+<ion-tabs>
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="tab1">
-      <ion-icon aria-hidden="true" name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
+<ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab2">
-      <ion-icon aria-hidden="true" name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+<ion-icon name="trail-sign"></ion-icon>
+      <ion-label>Travel</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab3">
-      <ion-icon aria-hidden="true" name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+<ion-icon name="bus"></ion-icon>
+      <ion-label>Bus</ion-label>
     </ion-tab-button>
+
+    <ion-tab-button tab="tab4">
+<ion-icon name="subway"></ion-icon>
+      <ion-label>Train</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab5">
+<ion-icon name="apps"></ion-icon>
+      <ion-label>Others</ion-label>
+    </ion-tab-button>
+    
   </ion-tab-bar>
 
+  
+    
 </ion-tabs>
